@@ -4,6 +4,15 @@
     <title>Document</title>
 </head>
 <body>
-    <p>hello world</p>
+    <p id="changed"> hello world</p>
+
+
+    <button onclick="mybutton()">my button</button>
 </body>
+<script>
+    function mybutton() {
+        const change = document.getElementById("changed");
+        change.innerHTML = "this has been changed";
+    }
+</script>
 </html>
